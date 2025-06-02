@@ -1,108 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-body{
-    margin: 0px;
-    background-color: black;
-    color: azure;
-    font-family: "Lato";
-    margin-left: 40px;
-    margin-right: 40px;
-    height: 100vh;
-    background-image: url(img/31179975-1607436173.png);
-    background-size: 150vh, cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+body {
+  margin: 0px;
+  background-color: black;
+  color: azure;
+  font-family: "Lato";
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 100vh;
+  background-image: url(img/31179975-1607436173.png);
+  background-size: 150vh, cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-.speed{
-    color: #faf700;    
+.speed {
+  color: #faf700;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav a{
-    text-decoration: none;
-    color: azure;
-    letter-spacing: px;
+nav a {
+  text-decoration: none;
+  color: azure;
+  letter-spacing: px;
 }
 
-nav, ul{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    gap: 120px ;
-    letter-spacing: 27%;
+nav,
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 120px;
+  letter-spacing: 27%;
 }
 
-header{
-    margin-bottom: 180px;
+header {
+  margin-bottom: 180px;
 }
 
-h2{
-    size: 17px;
+h2 {
+  size: 17px;
 }
 
-h1{
-    font-size: 80px;
-    line-height: 32px;
+h1 {
+  font-size: 80px;
+  line-height: 32px;
 }
 
-.Cyberpunk{
-    font-size: 80px;
-    color: #faf700;
+.Cyberpunk {
+  font-size: 80px;
+  color: #faf700;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@keyframes slideIn{
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main  p{
-    font-size: 18px;
-    line-height: 30px;
+main p {
+  font-size: 18px;
+  line-height: 30px;
 }
 
-main a{
-    margin-top: 30px;
-    color: #46738c;
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-    background-color: #faf700;
-    padding: 10px 20px;
-    width: fit-content;
+main a {
+  margin-top: 30px;
+  color: #46738c;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  background-color: #faf700;
+  padding: 10px 20px;
+  width: fit-content;
 }
 
-main .main-text p{
-    border-left: 4px solid #faf700;
-    padding-left: 20px;
-    margin: 40px 0;
+main .main-text p {
+  border-left: 4px solid #faf700;
+  padding-left: 20px;
+  margin: 40px 0;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideFadeIn 1s ease-out forwards;
 }
 
-main .main-intro{
-    position: relative;
-    right: 20vh;
+main .main-intro {
+  position: relative;
+  right: 20vh;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 1s ease-out forwards;
 }
 
-main .main-text{
-    position: relative;
-    left: 30vh;
+main .main-text {
+  position: relative;
+  left: 30vh;
 }
 
-main .main-text p:nth-child(2){
-    margin-left: 100px;
+main .main-text p:nth-child(2) {
+  margin-left: 100px;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideFadeIn 1.5s ease-out forwards;
 }
 
-main .main-text p:nth-child(3){
-    margin-left: 150px;
+@keyframes slideFadeIn{
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+main .main-text p:nth-child(3) {
+  margin-left: 150px;
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideFadeIn 2s ease-out forwards;
 }
 
-main .main-intro p{
-    padding-right: 100px;
+main .main-intro p {
+  padding-right: 100px;
 }
+
 
